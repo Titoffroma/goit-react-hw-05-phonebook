@@ -18,7 +18,38 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Titoffroma/goit-react-hw-05-phonebook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Titoffroma/goit-react-hw-05-phonebook/issues"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.hbs",
+        "options": {
+          "singleQuote": false
+        }
+      }
+    ],
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "arrowParens": "avoid",
+    "proseWrap": "always"
   },
   "eslintConfig": {
     "extends": [
@@ -37,5 +68,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
